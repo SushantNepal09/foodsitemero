@@ -1,0 +1,167 @@
+*
+{
+    margin:0;
+    padding : 0;
+  font-family: "Nunito" ,sans-serif;
+}
+/* for variables */
+:root
+{
+
+}
+/* Navigation-bar */
+/* used for logo */
+#navbar
+{
+    
+    /* border : 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.logo
+{
+    margin-left: 8px;
+    width: 25%;
+    display: flex;
+    gap:8px;
+    align-items: center;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+#navbar img
+{
+   
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.logo span{
+    color: rgb(234, 85, 4);
+    font-size: 1.8rem;
+    cursor: pointer;
+
+
+
+}
+#navbar ul
+{
+    display: flex;
+/* margin-right: 100 px; */
+    /* border: 1px solid red; */
+   
+}
+#navbar ul li
+{
+  
+    margin: 3px;
+    padding: 10px;
+    /* border: 1px solid red; */
+    list-style: none;
+}
+nav ul li a{
+    
+   padding: 3px;
+    text-decoration: none;
+    color: rgb(17, 5, 1);
+    font-size: 1rem;
+    
+}
+/* applicable to all li items expect login */
+.item a:hover
+{
+   color:rgb(255, 252, 252);
+   background-color: rgb(0, 0, 0); 
+   border-radius: 10px;
+   
+   
+}
+#navbar::before
+{
+    content:"";
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(237, 245, 252);
+    z-index: -1;
+    opacity: 1;
+}
+/* for login button */
+.login
+{
+   
+     padding: auto;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(228, 10, 10);
+  border-radius: 5px;
+}
+.login a
+{
+    color: aliceblue;
+}
+
+/* For the Main page section */
+#home
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    /* position: relative; */
+    height: 300px;
+}
+#home::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('/images/crunchy-5466250.jpg') no-repeat center center/cover;
+z-index: -1;
+/* opacity: 0.9; */
+}
+/* for the "Welcome to the ls pollos hermanos text" */
+.primaryheading
+{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(5, 5, 5);
+}
+/* selects only the 1st p */
+#home p:nth-of-type(1)
+{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(13, 12, 12);
+}
+input[type=text]
+{
+    margin-top: 10px;
+height: 40px;
+width:60%;
+text-indent: 10px;
+outline: none;
+border-radius: 3px;
+font-size: 15px;
+border: none;
+}
+input[type=button]
+{
+height: 35px;
+width: 10%;
+background-color: orangered;
+position: relative;
+top : -38px;
+left: 24.8%;
+cursor: pointer;
+border: none;
+border-radius: 3px;
+box-shadow: none;
+font-size: 15px;
+color: aliceblue;
+}
+
+
