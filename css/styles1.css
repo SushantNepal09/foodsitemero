@@ -11,7 +11,8 @@
 }
 /* Navigation-bar */
 /* used for logo */
-#navbar
+
+#navbar:not(.sidebar)
 {
     
     /* border : 1px solid red; */
@@ -44,7 +45,7 @@
 
 
 }
-#navbar ul
+#navbar ul:not(.sidebar)
 {
     display: flex;
 /* margin-right: 100 px; */
@@ -101,6 +102,60 @@ nav ul li a{
     color: aliceblue;
 }
 
+
+/* creating a side bar */
+.sidebar
+{
+    
+    position:fixed;
+    top : 0;
+    right : 0;
+    height: 100vh;
+    width:200px;
+    background: rgba(255, 255, 255, 0.451);
+    display: none;
+flex-direction: column;
+z-index: 99;
+box-shadow: -10px 0 10px rgba(0 ,0 ,0 ,0.1);
+backdrop-filter: blur(10px);
+font-size: 20px;
+}
+.sidebar .login
+
+{
+  
+  
+    width: 80%;
+}
+.fa-bars
+{
+    padding: 15px;
+    font-size: 20px;
+}
+.fa-times
+{
+    position: absolute;
+    left: 80%;
+    padding: 0 0 15px 15px;
+    font-size: 30px;
+}
+@media (max-width:800px)
+{
+    .hideonphone
+    {
+        display: none;
+    }
+   
+}
+@media (min-width:801px)
+{
+    .hideonpc
+    {
+        display: none;
+    }
+}
+
+
 /* For the Main page section */
 #home
 {
@@ -109,7 +164,7 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     /* border: 1px solid red; */
-    /* position: relative; */
+    position: relative;
     height: 300px;
 }
 #home::before
@@ -127,7 +182,7 @@ z-index: -1;
 {
     font-size: 50px;
     text-align: center;
-    color: rgb(5, 5, 5);
+    color: rgb(0, 0, 0);
 }
 /* selects only the 1st p */
 #home p:nth-of-type(1)
@@ -162,6 +217,45 @@ border-radius: 3px;
 box-shadow: none;
 font-size: 15px;
 color: aliceblue;
+}
+
+@media (max-width:630px) {
+    input[type=button]{
+       position: initial;
+       height: 25px;
+       width: 60%;
+       margin-top: 5px;
+
+    }
+    input[type=text]
+    {
+       height: 30px;
+    }
+    .primaryheading{
+        font-size: 30px;
+    }
+    .primaryheading .p
+    {
+        font-size: 5px;
+    }
+}
+@media (max-width:285px) {
+    .primaryheading{
+        font-size: 25px;
+    }
+     .primaryheading .p
+    {
+        font-size: 4px;
+    }
+    ::placeholder
+    {
+        font-size: 10px;
+
+    }
+    input[type=text]
+    {
+        font-size: 14px;
+    }
 }
 
 
