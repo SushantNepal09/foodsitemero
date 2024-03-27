@@ -13,9 +13,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
+  
 
   <nav id="navbar">
     <span class="login hideonpc"><a href="#">Log in</a></span>
@@ -24,12 +26,12 @@
       <span>Food-Site</span>
 
     </div>
-    <ul class="sidebar">
+    <ul class="sidebar" >
       <i class="fa fa-times" aria-hidden="true" onclick=hideSidebar()></i>
       <li class="item"><a href="#">Home</a></li>
       <li class="item"><a href="#">Browse</a></li>
       <li class="item"><a href="#">Contact Us</a></li>
-      <li class="item"><a href="#">About Us</a></li>
+      <li class="item"><a href="#aboutus">About Us</a></li>
       <!-- <li class="login"><a href="#">Log in</a></li> -->
 
     </ul>
@@ -37,7 +39,7 @@
 
 
 
-      <li class="item hideonphone"><a href="#">Home</a></li>
+      <li class="item hideonphone"><a href="#home">Home</a></li>
       <li class="item hideonphone"><a href="#">Browse</a></li>
       <li class="item hideonphone"><a href="#">Contact Us</a></li>
       <li class="item hideonphone"><a href="#">About Us</a></li>
@@ -55,36 +57,391 @@
     <input type="button" value="Search"></input>
 
   </section>
-  <section id="mainpage">
-    <h2 class="secondaryheading  offer">
-      Special Offer
-    </h2>
-    <table>
-      <thead>
-        <tr>
-          <th></th>
-          <th>Item</th>
-          <th>Price</th>
-          <th>Order</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td></td>
-          <td>
-            Buy 1 get one free
-          </td>
-          <td>
-            Rs 450
-          </td>
-          <td>
+  <div class="tomakeflex">
+    <div class="ordercheckout">
+      <div class="orderkoheading">
+        <h3>Order Summary</h3>
+      </div>
 
-            pluse
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+      <input type="button" value="Check Out">
+      <span>Delivery Charges will be calculated in next step</span>
+
+    </div>
+    <section id="mainpage">
+      <div class="topbutton ">
+       <a href="#navbar" class="hideonphone"><i class="fa-solid fa-angle-up "></i></a>
+      </div>
+
+      <div class="tables">
+        <h2 class="secondaryheading  offer">
+          Special Offer
+        </h2>
+        <table id="table1">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th></th>
+              <th>Price</th>
+              <th>Order</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img class="image" src="./images/biryani.jpg"></td>
+              <td>
+                <h3 class="tertiaryheading"> Buy 1 get one free</h3>
+              </td>
+              <td>
+                Rs 450
+              </td>
+              <td>
+
+                <i class="fa-solid fa-plus"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 class="secondaryheading  offer">
+          Cold-Drinks
+        </h2>
+        <table id="table2">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th></th>
+              <th>Price</th>
+              <th>Order</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img class="image" src="./images/cocacola.jpg"></td>
+              <td>
+                <h3 class="tertiaryheading"> Coke</h3>
+              </td>
+              <td>
+                Rs 450
+              </td>
+              <td>
+
+                <i class="fa-solid fa-plus"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="image" src="./images/sprite.jpg"></td>
+              <td>
+                <h3 class="tertiaryheading"> Sprite</h3>
+              </td>
+              <td>
+                Rs 450
+              </td>
+              <td>
+
+                <i class="fa-solid fa-plus"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="image" src="./images/Redbull.jpg"></td>
+              <td>
+                <h3 class="tertiaryheading">Red Bull</h3>
+              </td>
+              <td>
+                Rs 450
+              </td>
+              <td>
+                <i class="fa-solid fa-plus"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="image" src="./images/water3.jpg"></td>
+              <td>
+                <h3 class="tertiaryheading">Water</h3>
+              </td>
+              <td>
+                Rs 450
+              </td>
+              <td>
+
+                <i class="fa-solid fa-plus"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="image" src="./images/lassi.jpg"></td>
+              <td>
+                <h3 class="tertiaryheading">Lassi</h3>
+              </td>
+              <td>
+                Rs 450
+              </td>
+              <td>
+                <i class="fa-solid fa-plus"></i>
+              </td>
+            </tr>
+          </tbody>
+
+        </table>
+
+        <h2 class="secondaryheading  offer">
+          Biryani
+        </h2>
+        <table id="table3">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th></th>
+              <th>Price</th>
+              <th>Order</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img class="image" src="./images/Chickenbiryani.jpg"></td>
+              <td>
+                <h3 class="tertiaryheading">Chicken</h3>
+              </td>
+              <td>
+                Rs 450
+              </td>
+              <td>
+
+                <i class="fa-solid fa-plus"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="image" src="./images/vegbiryani.jpg"></td>
+              <td>
+                <h3 class="tertiaryheading">Veg</h3>
+              </td>
+              <td>
+                Rs 450
+              </td>
+              <td>
+
+                <i class="fa-solid fa-plus"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="image" src="./images/muttonbiryani.jpg"></td>
+              <td>
+                <h3 class="tertiaryheading">Mutton</h3>
+              </td>
+              <td>
+                Rs 450
+              </td>
+              <td>
+
+                <i class="fa-solid fa-plus"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="image" src="./images/Eggbiryani.jpg"></td>
+              <td>
+                <h3 class="tertiaryheading">Egg</h3>
+              </td>
+              <td>
+                Rs 450
+              </td>
+              <td>
+
+                <i class="fa-solid fa-plus"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="image" src="./images/mixedbiryani.jpg"></td>
+              <td>
+                <h3 class="tertiaryheading">Mixed</h3>
+              </td>
+              <td>
+                Rs 450
+              </td>
+              <td>
+                <i class="fa-solid fa-plus"></i>
+              </td>
+            </tr>
+          </tbody>
+
+        </table>
+        <h2 class="secondaryheading  offer">
+          MO:MO
+        </h2>
+        <table id="table4">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th></th>
+              <th>Price</th>
+              <th>Order</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img class="image" src="./images/chickenmomo (1).jpg"></td>
+              <td>
+                <h3 class="tertiaryheading">Chicken</h3>
+              </td>
+              <td>
+                Rs 450
+              </td>
+              <td>
+
+                <i class="fa-solid fa-plus"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="image" src="./images/vegmomos.jpg"></td>
+              <td>
+                <h3 class="tertiaryheading">Veg</h3>
+              </td>
+              <td>
+                Rs 450
+              </td>
+              <td>
+
+                <i class="fa-solid fa-plus"></i>
+              </td>
+            </tr>
+
+            <tr>
+              <td><img class="image" src="./images/buffmomo.png"></td>
+              <td>
+                <h3 class="tertiaryheading">Buff</h3>
+              </td>
+              <td>
+                Rs 450
+              </td>
+              <td>
+
+                <i class="fa-solid fa-plus"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="image" src="./images/Chicken(Fried).jpg"></td>
+              <td>
+                <h3 class="tertiaryheading">Chicken(F)</h3>
+              </td>
+              <td>
+                Rs 450
+              </td>
+              <td>
+
+                <i class="fa-solid fa-plus"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="image" src="./images/veg(fried).jpg"></td>
+              <td>
+                <h3 class="tertiaryheading">Veg(F)</h3>
+              </td>
+              <td>
+                Rs 450
+              </td>
+              <td>
+                <i class="fa-solid fa-plus"></i>
+              </td>
+            </tr>
+
+            <tr>
+              <td><img class="image" src="./images/buff(fried).jpg"></td>
+              <td>
+                <h3 class="tertiaryheading">Buff(F)</h3>
+              </td>
+              <td>
+                Rs 450
+              </td>
+              <td>
+                <i class="fa-solid fa-plus"></i>
+              </td>
+            </tr>
+
+          </tbody>
+
+        </table>
+        <h2 class="secondaryheading  offer">
+          Snacks
+        </h2>
+        <table id="table4">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th></th>
+              <th>Price</th>
+              <th>Order</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img class="image" src="./images/pizza.jpg"></td>
+              <td>
+                <h3 class="tertiaryheading">Pizza</h3>
+              </td>
+              <td>
+                Rs 450
+              </td>
+              <td>
+
+                <i class="fa-solid fa-plus"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="image" src="./images/Burger.jpg"></td>
+              <td>
+                <h3 class="tertiaryheading">Burger</h3>
+              </td>
+              <td>
+                Rs 450
+              </td>
+              <td>
+
+                <i class="fa-solid fa-plus"></i>
+              </td>
+            </tr>
+
+            <tr>
+              <td><img class="image" src="./images/frenchfries.jpg"></td>
+              <td>
+                <h3 class="tertiaryheading">Fries</h3>
+              </td>
+              <td>
+                Rs 450
+              </td>
+              <td>
+
+                <i class="fa-solid fa-plus"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="image" src="./images/Pakoda.jpg"></td>
+              <td>
+                <h3 class="tertiaryheading">Pakoda</h3>
+              </td>
+              <td>
+                Rs 450
+              </td>
+              <td>
+
+                <i class="fa-solid fa-plus"></i>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="image" src="./images/Chickenwings.jpeg"></td>
+              <td>
+                <h3 class="tertiaryheading">Wings</h3>
+              </td>
+              <td>
+                Rs 450
+              </td>
+              <td>
+                <i class="fa-solid fa-plus"></i>
+              </td>
+            </tr>
+
+
+          </tbody>
+        </table>
+
+      </div>
+    </section>
+  </div>
   <script>
     function showSidebar() {
       const sidebar = document.querySelector('.sidebar')
@@ -95,6 +452,31 @@
       sidebar.style.display = 'none';
     }
   </script>
+  <div class="aboutus" id="aboutus">
+    <h2>About us</h2>
+    <div class="extratext">
+     <div class="part1">
+      <!-- <h3>Quick Links</a></h3> -->
+      <p><a href="">Available Areas</a></p>
+      <p><a href="">Follow us</a></p>
+      <p><a href="">Contact Us</a></p>
+    </div>
+    <div class="payment">
+      <p>We accept</p>
+      <div id="paymentimages">
+        <img src="./images/esewa (1).png">
+        <img src="./images/Khalti (1).png">
+        <img src="./images/googlepay.jpg">
+        <img src="./images/hamropay.jpg">
+        <img src="./images/cocgems.jpg">
+        <img src="./images/Minecraft-Diamond.jpg">
+      </div>
+    </div>
+
+  
+
+    </div>
+  </div>
 </body>
 
 </html>
